@@ -1,0 +1,118 @@
+.slider {
+  padding: 40px 10px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0 0 0px;
+  }
+}
+
+.slider__card {
+  margin: 0 10px;
+  width: 135px;
+  height: 65px;
+  padding: 10px;
+  background-color: $main-dark-bg;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+
+  @media (min-width: $tablet-width) {
+    width: 360px;
+    height: 129px;
+    padding: 25px 10px;
+  }
+
+  &_map {
+    background-image: url("../img/map.svg");
+  }
+  &_country {
+    background-image: url("../img/country.svg");
+  }
+  &_consultation {
+    background-image: url("../img/consultation.svg");
+  }
+  &_user {
+    background-image: url("../img/user.svg");
+  }
+  &_partner {
+    background-image: url("../img/partner.svg");
+  }
+  &_city {
+    background-image: url("../img/city.svg");
+  }
+}
+
+.slider__inner {
+  width: 120px;
+
+  @media (min-width: $tablet-width) {
+width: 175px;
+  }
+}
+
+.slider__card-num,
+.slider__card-descr {
+  margin: 0;
+}
+
+.slider__card-num {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 28px;
+  }
+}
+
+.slider__card-descr {
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.slider__controls {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  justify-items: center;
+  align-content: center;
+  padding-top: 20px;
+  height: 55px;
+  width: 203px;
+  margin: 0 auto;
+}
+
+.slider__btn {
+  position: absolute;
+  bottom: 0;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid $select-color;
+  background-image: url("../img/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8.34px 15.02px;
+
+  &_prev {
+    transform: scale(-1, 1);
+    grid-column: 1/2;
+  }
+
+  &_next {
+    grid-column: 3;
+  }
+}

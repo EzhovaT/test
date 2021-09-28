@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Европейская Юридическая Служба</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="page">
+    <div class="page__wrapper">
+      <header class="header">
+        <div class="container">
+          <h1 class="title">О компании</h1>
+        </div>
+      </header>
+
+      <main class="about-us">
+        <div class="container">
+          <div class="about-us__descr">
+            <div class="logo">
+              <img class="logo__image" src="img/logo.svg" alt="Логотип компании 'Европейская Юридическая Служба'" width="231" height="111"/>
+            </div>
+
+            <p class="about-us__info">
+              Европейская Юридическая Служба была основана в 2007 году, создав
+              на рынке новую товарную категорию круглосуточной дистанционной
+              юридической поддержки. Компания стала первой, предложившей рынку
+              онлайн услугу юридической профилактики по всем видам права.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-us__slider">
+          <div class="slider">
+            <div class="slider__track">
+              <div class="slider__card slider__card_map">
+                <div class="slider__inner">
+                  <p class="slider__card-num">15 000</p>
+                  <p class="slider__card-descr">точек продаж</p>
+                </div>
+              </div>
+
+              <div class="slider__card slider__card_country">
+                <div class="slider__inner">
+                  <p class="slider__card-num">8</p>
+                  <p class="slider__card-descr">стран присутствия сервиса</p>
+                </div>
+              </div>
+
+              <div class="slider__card slider__card_consultation">
+                <div class="slider__inner">
+                  <p class="slider__card-num">4 500 000</p>
+                  <p class="slider__card-descr">консультаций</p>
+                </div>
+              </div>
+
+              <div class="slider__card slider__card_user">
+                <div class="slider__inner">
+                  <p class="slider__card-num">3 000 000</p>
+                  <p class="slider__card-descr">пользователей</p>
+                </div>
+              </div>
+
+              <div class="slider__card slider__card_partner">
+                <div class="slider__inner">
+                  <p class="slider__card-num">150</p>
+                  <p class="slider__card-descr">корпоративных партнеров</p>
+                </div>
+              </div>
+
+              <div class="slider__card slider__card_city">
+                <div class="slider__inner">
+                  <p class="slider__card-num">2007</p>
+                  <p class="slider__card-descr">год основания</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__controls">
+              <button class='slider__btn slider__btn_prev' id="prev" type="button"></button>
+              <button class='slider__btn slider__btn_next' id="next" type="button"></button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <section class="main-form">
+        <div class="container">
+          <div class="main-form__inner">
+            <div class="tagline">
+              <div class="tagline__inner">
+                <div class="tagline__img-box">
+                  <img class="tagline__image" src="img/tagline.png" alt="" width="280"/>
+                </div>
+                <p class="tagline__descr">Уже есть бизнес? <br> Откройте счет прямо сейчас!</p>
+              </div>
+            </div>
+
+            <form class="form" method="POST" action="#" enctype="multipart/form-data" autocomplete="off">
+              <fieldset class="form__fieldset">
+                <h2 class="form__title">Оставьте заявку на открытие счёта, и специалист банка «ВТБ» свяжется с Вами в самое ближайшее время</h2>
+
+                <label class="form__label" for="name">Наименование заявителя
+                  <input class="form__input" minlength="1" title="Наименование заявителя" type="text" id="name" name="name" required>
+                  <span class="form__placeholder" placeholder='Наименование заявителя'></span>
+                </label>
+
+                <label class="form__label" for="user-name">Контактное лицо
+                  <input class="form__input" title="Контактное лицо" type="text" id="user-name" name="user-name" required>
+                  <span class="form__placeholder" placeholder='Контактное лицо'></span>
+                </label>
+
+                <label class="form__label" for="phone">Телефон
+                  <input class="form__input" title="Телефон" type="number" id="phone" name="phone" required>
+                  <span class="form__placeholder" placeholder='Телефон'></span>
+                </label>
+                <p class="form__clarification">Просьба указать телефон с кодом города. В формате: (код города) номер телефона</p>
+
+                <div class="form__contract">
+                  <input class="form__checkbox" id="contract" name="contract" type="checkbox" checked required>
+                  <label class="form__label form__label_contract" for="contract">Оставляя заявку, вы принимаете условия Пользовательского соглашения и Политики конфиденциальности.</label>
+                </div>
+              </fieldset>
+
+              <button class="form__btn" type="submit">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="js/script.min.js"></script>
+    </div>
+  </body>
+</html>

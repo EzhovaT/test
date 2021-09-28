@@ -1,0 +1,38 @@
+.slick-dots {
+  display: flex;
+  justify-content: space-between;
+  min-width: 90px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  grid-column: 2;
+
+  & button {
+    background-color: $slider-dots;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.slick-dots .slick-active {
+  & button {
+    width: 12px;
+    height: 12px;
+    background-color: $select-color;
+  }
+}
+
+.slick-list {
+  @media (min-width: $tablet-width) {
+    padding: 0 10% 0 0;
+  }
+}
+
+.slick-track:first-child {
+  @media (min-width: $desktop-width) {
+    margin-left: 150px;
+  }
+}

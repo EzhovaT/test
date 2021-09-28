@@ -1,0 +1,16 @@
+@import "normalize-sass/normalize/import-now";
+
+@import "global/breakpoints.scss";
+@import "global/global.scss";
+@import "global/variables.scss";
+
+@import "blocks/container.scss";
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/title.scss";
+@import "blocks/about-us.scss";
+@import "blocks/slider.scss";
+@import "blocks/slick.scss";
+@import "blocks/main-form.scss";
+@import "blocks/tagline.scss";
+@import "blocks/form.scss";
